@@ -1,0 +1,173 @@
+body{
+    background: #f4f4f4;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-y:scroll;
+}
+
+@font-face {
+    font-family: colfax; 
+    src: url('fonts/Colfax-Regular.otf');
+}
+
+@font-face {
+    font-family: RobotoBold; 
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+#search{
+    position: absolute;
+    right: 110px;
+    top: 15px;
+    border-radius: 30px;
+    padding: 5px 5px;
+}
+
+.iconse{
+    position: absolute;
+    right: 121px;
+    top: 23px;
+}
+
+.prof{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.nav{
+    text-align: center;
+    padding: 9px 0px 50px 0px;
+    background-color: #333333;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+a{
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  font-family: colfax;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #66676b;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+
+/* top level elements */
+#nav, #nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/*edit this for MENU word*/
+#nav {
+    height: 22px;
+    padding: 10px 0 10px 5px;
+
+    position: absolute;
+    right: -5px;
+    top: -10px;
+}
+#nav > li {
+    float: left;
+    height: 22px;
+    padding-right: 6px;
+    position: relative;
+    text-align: left;
+}
+#nav > li > a {
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    margin: -3px 0 0 -1px;
+    padding: 0 1px 0 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+}
+#nav > li:hover > a, #nav > a:hover {
+    background-color: #425691;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    margin-right: -8px;
+    padding: 0 9px 0 11px;
+    position: relative;
+    z-index: 1;
+}
+#nav > li.subs:hover > a {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    border-bottom-width: 0;
+    border-radius: 2px 2px 0 0;
+    color: #000000;
+    text-shadow: 0 0 transparent;
+    z-index: 2;
+}
+
+/* submenu */
+#nav ul {
+    background-color: white;
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    *border: 1px solid rgb(100, 100, 100);
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    display: none;
+    
+    /*change hover menu*/
+    right: 10px;
+    text-align: left;
+    min-width: 150px;
+    
+    margin-top: 2px;
+    padding: 6px 0;
+    position: absolute;
+    top: 120%;
+}
+#nav li:hover ul {
+    display: block;
+}
+
+/*edit the hover details*/
+#nav ul li a {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+    line-height: 20px;
+    padding: 0 22px;
+    white-space: nowrap;
+    
+    font-family: colfax;
+    font-size: 14px;
+    left: 10px;
+}
+#nav ul li a:hover {
+    background-color: #333333;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+    color: white;
+    width:94px;
+}

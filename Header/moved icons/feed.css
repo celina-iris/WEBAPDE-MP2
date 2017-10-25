@@ -1,0 +1,67 @@
+body{
+    background: #f4f4f4;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-y:scroll;
+}
+
+@font-face {
+    font-family: colfax; 
+    src: url('fonts/Colfax-Regular.otf');
+}
+
+#search{
+    position: absolute;
+    right: 110px;
+    top: 15px;
+    border-radius: 30px;
+    padding: 5px 5px;
+}
+
+.iconse{
+    position: absolute;
+    right: 121px;
+    top: 23px;
+}
+
+.prof{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.nav{
+    text-align: center;
+    padding: 9px 0px 50px 0px;
+    background-color: #333333;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+a{
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  font-family: colfax;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #66676b;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
